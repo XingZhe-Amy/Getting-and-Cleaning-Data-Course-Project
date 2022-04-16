@@ -80,8 +80,9 @@ split()
 lapply()
 tapply()
 
-# another way: use acast function in reshape 2 package and ftable to create a ‘flat’  tables.
-acast()
-ftable()
+# another way: use summarize_all and group_by function in dplyr package.
+library(dplyr)
+group_by()
+summarize_all()
 ```
 
