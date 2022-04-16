@@ -50,7 +50,8 @@ datset$`subject number` <- factor(datset$`subject number`)
 
 
 # Step 5
-library(reshape2)
-datamelt <- melt(datset, id = c("subject number", "activity labels"))
-crossmean <- ftable(acast(datamelt, `subject number` ~ `activity labels` ~ variable, mean))
-write.table("./data/crossmean.txt", row.name = F)
+library(dplyr)
+crossmean <- datset %>%
+  group_by(`subject number`, `activity labels`) %>%
+  summarize_all(mean)
+write.table(crossmean, "./data/crossmean.txt", row.names = F)
