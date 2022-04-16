@@ -1,3 +1,5 @@
+**the variable and the unit is the picture in step 2**
+
 ## Step 1: download and unzip the file 
 
 ```R
