@@ -7,15 +7,18 @@ unzip()
 
 the problem I meet is "exdir" argument in function zip, which is the directory to extract files to.
 
-*****
+
+
 
 ## Step 2:  figure out the structure of the data
 
 the data set we need in this project is not all the files in the data file. so I need to figure out the structure of the required data set.
 
-<img src="C:\Users\Amy\Desktop\无标题.png" alt="无标题"  />
+![无标题](https://user-images.githubusercontent.com/59439258/163657928-7655dbe9-8a27-4b6a-89ae-171a04ea95f6.png)
 
-*******
+
+
+
 
 ## Step 3: import and merge the data we need
 
@@ -29,7 +32,8 @@ cbind()
 rbind()
 ```
 
-******
+
+
 
 ## Step 4: extract the measurements we need
 
@@ -41,7 +45,8 @@ name()
 grep()
 ```
 
-******
+
+
 
 ## Step 5:  use descriptive activity names to name the activities in the data set
 
@@ -51,7 +56,8 @@ factor()
 # the triky is argument in factor, like levels and labels
 ```
 
-*********
+
+
 
 ## Step 6: labels the data set with descriptive variable names
 
@@ -61,7 +67,8 @@ factor()
 factor()
 ```
 
-******
+
+
 
 ## Step 7: create a new data set required
 
